@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AutomaticBatchingDemo from "./components/AutomaticBatchingDemo";
+import TransitionDemo from "./components/TransitionDemo";
+import DeferredValueDemo from "./components/DeferredValueDemo";
+import SuspenseDemo from "./components/SuspenseDemo";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>🔵 Modern React (17 → 18+)</h1>
+
+      {/* ✅ Automatic Batching */}
+      <AutomaticBatchingDemo />
+
+      {/* ✅ useTransition */}
+      <TransitionDemo />
+
+      {/* ✅ useDeferredValue */}
+      <DeferredValueDemo />
+
+      {/* ✅ Suspense for Data Fetching */}
+      <SuspenseDemo />
     </div>
   );
 }
-
-export default App;
